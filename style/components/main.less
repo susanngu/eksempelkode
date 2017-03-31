@@ -1,0 +1,114 @@
+@import "./style/settings/colors.less";
+section.main {
+  min-height: 1000px;
+
+  .portifolioElements{
+    //margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    .jkljkl {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .portfolioImage{
+        height:350px;
+        width: 350px;
+        overflow: hidden;
+        transition: all 2s;
+        cursor: pointer;
+        background-color: white;
+        img{
+          height:350px;
+          width: 350px;
+          padding: 6px;
+          transition: all 6s ease;
+          filter: grayscale(50%);
+        }
+      }
+      .portfolioImage.active{
+        img{
+          height:450px;
+          width: 450px;
+          filter: grayscale(0%);
+        }
+
+      }
+    }
+
+
+  }
+  > div{
+    width: 100%;
+  }
+
+  .curriculumVitae{
+    margin-top: 57px;
+    .cvElement{
+      margin-top: 20px;
+      margin-left: 30px;
+      border-top: 1px solid grey;
+      margin-right: 30px;
+
+      .titleText{
+        >span{
+          border-top: 3px solid;
+          font-size: 29px;
+          font-weight: 500;
+        }
+      }
+      .cvContent{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .name{
+          //font-weight: 500;
+          font-size: 19px;
+        }
+        .description{
+          font-style: italic;
+        }
+      }
+
+    }
+  }
+
+  footer{
+    height: 300px;
+    margin-top: 200px;
+    background: white;
+    width: 100%;
+    display: flex;
+    //justify-content: center;
+    .profileHeader{
+      padding: 10px;
+      display: flex;
+      .profilePic{
+        width: 250px;
+        img{
+          height: 150px;
+          width: 150px;
+          border-radius: 150px;
+        }
+      }
+      .leftContent{
+        flex-grow:2;
+        .top{
+          display: flex;
+          justify-content: space-between;
+          .userName{
+            font-size: 30px;
+          }
+          i{
+            align-self: center;
+          }
+        }
+
+
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,333 @@
+body {
+  background-color: #fafafa;
+  font-family: "Helvetica Neue", 'Arial', 'Helvetica', sans-serif;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+body .material-icons {
+  vertical-align: middle;
+}
+body a {
+  color: #3b4362;
+  text-decoration: none;
+}
+body a:hover {
+  color: #81b3cd;
+  cursor: pointer;
+}
+.content {
+  margin-top: 77px;
+}
+.content > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerGroup {
+  background: url('');
+  background-size: 100% 100%;
+  background-position: center;
+}
+.headerGroup .topHeader {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.headerGroup .topHeader .lali {
+  font-size: 60px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 50%;
+}
+.headerGroup header {
+  height: 77px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ddd;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-family: "Helvetica Neue", 'Arial', 'Helvetica', sans-serif;
+}
+.headerGroup header.fixed {
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+}
+.headerGroup header.fixed .navButton.cv {
+  animation: fontbulger 0.8s ease-out;
+  margin-left: 18px;
+}
+@keyframes fontbulger {
+  from {
+    margin-left: 45%;
+  }
+  to {
+    margin-left: 18px;
+  }
+}
+.headerGroup header.fixed .navButton.my.work {
+  animation: backbulger 0.8s ease-out;
+  margin-right: 18px;
+}
+@keyframes backbulger {
+  from {
+    margin-right: 45%;
+  }
+  to {
+    margin-right: 18px;
+  }
+}
+.headerGroup header:not(.fixed) {
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+.headerGroup header .logo {
+  align-self: center;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 30px;
+}
+.headerGroup header .logo:hover {
+  color: #81b3cd;
+  cursor: pointer;
+}
+.headerGroup header img {
+  height: 50px;
+  align-self: center;
+}
+.headerGroup header > div {
+  display: flex;
+}
+.headerGroup header .navButton {
+  margin: 18px;
+  align-self: center;
+}
+.headerGroup header .navButton i {
+  vertical-align: bottom;
+}
+.headerGroup header .navButton:hover,
+.headerGroup header .navButton.active {
+  color: #81b3cd;
+  cursor: pointer;
+}
+
+section.home .giftcard {
+  background-color: white;
+}
+section.home .giftcard h1 {
+  text-align: center;
+}
+section.home .giftcard h1 label {
+  border-bottom: 3px dotted;
+}
+section.home .giftcard .whatitis {
+  text-align: center;
+}
+section.home .giftcard .whatitis i {
+  transform: rotate(90deg);
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 15px;
+  vertical-align: initial;
+}
+section.home .giftcard > span {
+  padding: 10px;
+  display: block;
+}
+section.home .giftcard > span label {
+  font-weight: 600;
+}
+section.home .referenceBox {
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #ddd;
+  flex: 2;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+section.home .referenceBox > span:first-of-type {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.home .referenceBox > span:first-of-type .row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+section.home .referenceBox > span:first-of-type .row input,
+section.home .referenceBox > span:first-of-type .row button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 100;
+}
+section.home .referenceBox > span:first-of-type .row button {
+  background-color: #3b4362;
+  color: white;
+}
+section.home .referenceBox > span:first-of-type .row.error input {
+  border-color: #FF533D;
+}
+
+section.main {
+  min-height: 1000px;
+}
+section.main .portifolioElements {
+  display: flex;
+  flex-direction: column;
+}
+section.main .portifolioElements .jkljkl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.main .portifolioElements .jkljkl .portfolioImage {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  transition: all 2s;
+  cursor: pointer;
+  background-color: white;
+}
+section.main .portifolioElements .jkljkl .portfolioImage img {
+  height: 350px;
+  width: 350px;
+  padding: 6px;
+  transition: all 6s ease;
+  filter: grayscale(50%);
+}
+section.main .portifolioElements .jkljkl .portfolioImage.active img {
+  height: 450px;
+  width: 450px;
+  filter: grayscale(0%);
+}
+section.main > div {
+  width: 100%;
+}
+section.main .curriculumVitae {
+  margin-top: 57px;
+}
+section.main .curriculumVitae .cvElement {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-top: 1px solid grey;
+  margin-right: 30px;
+}
+section.main .curriculumVitae .cvElement .titleText > span {
+  border-top: 3px solid;
+  font-size: 29px;
+  font-weight: 500;
+}
+section.main .curriculumVitae .cvElement .cvContent {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.main .curriculumVitae .cvElement .cvContent .name {
+  font-size: 19px;
+}
+section.main .curriculumVitae .cvElement .cvContent .description {
+  font-style: italic;
+}
+section.main footer {
+  height: 300px;
+  margin-top: 200px;
+  background: white;
+  width: 100%;
+  display: flex;
+}
+section.main footer .profileHeader {
+  padding: 10px;
+  display: flex;
+}
+section.main footer .profileHeader .profilePic {
+  width: 250px;
+}
+section.main footer .profileHeader .profilePic img {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+}
+section.main footer .profileHeader .leftContent {
+  flex-grow: 2;
+}
+section.main footer .profileHeader .leftContent .top {
+  display: flex;
+  justify-content: space-between;
+}
+section.main footer .profileHeader .leftContent .top .userName {
+  font-size: 30px;
+}
+section.main footer .profileHeader .leftContent .top i {
+  align-self: center;
+}
+
+section.profile .container {
+  min-width: 700px;
+}
+section.profile .container .profileHeader {
+  padding: 10px;
+  display: flex;
+}
+section.profile .container .profileHeader .profilePic {
+  width: 250px;
+}
+section.profile .container .profileHeader .profilePic img {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+}
+section.profile .container .profileHeader .leftContent {
+  flex-grow: 2;
+}
+section.profile .container .profileHeader .leftContent .top {
+  display: flex;
+  justify-content: space-between;
+}
+section.profile .container .profileHeader .leftContent .top .userName {
+  font-size: 30px;
+}
+section.profile .container .profileHeader .leftContent .top i {
+  align-self: center;
+}
+section.profile .container .workoutCounter {
+  background-color: white;
+  height: 56px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.profile .container .workoutCounter .counter {
+  padding: 10px;
+}
+section.profile .container .workoutCounter .counter .number {
+  font-size: 30px;
+}
+
+section.profile .container .profileContent {
+  margin-top: 50px;
+}
+section.profile .container .profileContent .oneWorkout {
+  border: 1px solid;
+  height: 56px;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+section.profile .container .profileContent .oneWorkout .name {
+  font-size: 20px;
+}
+
+

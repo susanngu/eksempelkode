@@ -1,0 +1,68 @@
+@import "./style/settings/colors.less";
+section.home{
+	.giftcard{
+		background-color: white;
+		h1{
+			text-align: center;
+			label{
+			  border-bottom: 3px dotted;
+			}
+		}
+	  .whatitis{
+		text-align: center;
+		i{
+			transform: rotate(90deg);
+			border: 2px solid;
+			border-radius: 50%;
+			font-size: 15px;
+    		vertical-align: initial;
+		}
+	  }
+		> span{
+			padding: 10px;
+			display: block;
+			label{
+				font-weight: 600;
+			}
+
+		}
+	}
+
+
+	.referenceBox{
+	 	max-width: 400px;
+		background-color: white;
+		border: 1px solid #ddd;
+		flex:2;
+		opacity: 0.9;
+		border-radius: 4px;
+
+		> span:first-of-type{
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.row{
+				display: flex;
+    			flex-direction: column;
+			  	margin-bottom: 10px;
+				input, button{
+					border: 1px solid #ddd;
+					border-radius: 4px;
+					font-size: 18px;
+    				padding: 10px;
+    				font-weight: 100; 
+				}
+				button{
+					background-color: @button-color;
+					color:white;
+				}
+			  &.error{
+				input{
+				  border-color: @coral;
+				}
+			  }
+			}
+		}
+	}
+}

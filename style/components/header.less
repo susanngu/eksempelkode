@@ -1,0 +1,106 @@
+@import "./style/settings/colors.less";
+@import "./style/settings/fonts.less";
+
+
+.headerGroup{
+    background: url('');
+    background-size: 100% 100%;
+    background-position: center;
+    .topHeader{
+        //background: linear-gradient(135deg, rgba(77,88,122,1) 0%, rgba(77,88,122,1) 21%, rgba(25,30,46,1) 73%, rgba(25,30,46,1) 100%);
+        background-color: rgba(255,255,255,0.3);
+        text-align: center;
+        .lali{
+          font-size: 60px;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          top: 50%;
+        }
+        //background-size: 100% 100%;
+    }
+
+    header{
+        &.fixed{
+            position: fixed;
+            top: 0;
+            justify-content: space-between;
+            .navButton.cv{
+              animation: fontbulger 0.8s ease-out;
+              margin-left: 18px;
+              @keyframes fontbulger {
+                from {
+                  margin-left: 45%;
+                }
+                to{
+                  margin-left: 18px;
+                }
+              }
+            }
+          .navButton.my.work{
+            animation: backbulger 0.8s ease-out;
+            margin-right: 18px;
+            @keyframes backbulger {
+              from {
+                margin-right: 45%;
+              }
+              to{
+                margin-right: 18px;
+              }
+            }
+          }
+        }
+
+        &:not(.fixed){
+            bottom:0;
+            background: rgba(255,255,255,0.5);
+        }
+        height: 77px;
+        background-color:rgba(255,255,255,0.9);
+        border-bottom: 1px solid #ddd;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        //color: @header-color;
+        font-family: @header-font;
+        .logo{
+            align-self: center;
+            font-family: monospace;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .logo:hover{
+            color: @link-color;
+            cursor:pointer;
+        }
+
+        img{
+            height: 50px;
+            align-self: center;
+            }
+        > div {
+            display:flex;
+
+
+        }
+        .navButton{
+            margin: 18px;  
+            align-self: center;
+            i{
+                vertical-align: bottom;
+            }
+        }
+        .navButton:hover, .navButton.active {
+            color: @link-color;
+            cursor:pointer;
+        }
+    }
+
+
+
+}
+
+

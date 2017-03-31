@@ -1,0 +1,32 @@
+@import "./style/settings/colors.less";
+@import "./style/settings/fonts.less";
+
+body{
+	background-color: @body-color;
+	font-family: @body-font;
+	margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+  .material-icons{
+	vertical-align: middle;
+  }
+    a{
+        color:@navy-blue;
+        text-decoration: none;
+    }
+	a:hover{
+        color: @link-color;
+	    cursor: pointer;
+	}
+}
+.content{
+    margin-top:77px;
+    //padding: 10px;
+    //height: 2000px;
+    > section{
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    }
+
+}

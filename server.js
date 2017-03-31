@@ -1,0 +1,18 @@
+"use strict";
+
+var express = require('express');
+var path = require('path');
+
+var server = express();
+
+server.use('/dest', express.static(path.join(__dirname, 'dest')));
+
+server.get('*', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+
+});
+
+var port = 10001;
+server.listen(port, function() {
+    console.log('server listening on port ' + port);
+});

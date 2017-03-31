@@ -1,0 +1,57 @@
+@import "./style/settings/colors.less";
+section.profile{
+
+ 	.container{
+	    min-width: 700px;
+	    //background-color: white;
+
+ 		.profileHeader{
+ 			padding: 10px;
+ 			display: flex;
+ 			.profilePic{
+ 				width: 250px;
+ 				img{
+ 					height: 150px;
+ 					width: 150px;
+ 					border-radius: 150px;
+ 				}
+ 			}
+ 			.leftContent{
+ 				flex-grow:2;
+ 				.top{
+ 					display: flex;
+ 					justify-content: space-between;
+					.userName{
+	 					font-size: 30px;
+	 				}
+	 				i{
+	 					align-self: center;
+	 				}
+ 				}
+ 				
+
+ 			}
+
+ 		}
+
+ 		.workoutCounter{
+		    background-color: white;
+		    height: 56px;
+		    padding: 10px;
+	        display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;
+
+		    .counter{
+		    	padding:10px;
+		    	.number{
+					font-size: 30px;
+		    	}
+		    	.numberName{
+
+		    	}
+		    }
+ 		}
+ 	}
+
+}
